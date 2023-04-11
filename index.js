@@ -42,3 +42,13 @@ lista.addEventListener("click",function(e){
         element.parentNode.parentNode.removeChild(element.parentNode)
        }
 })
+
+document.addEventListener("keyup", function(e){
+   if(e.key==="Enter"){
+    const tarea = input.value
+    if(tarea){
+        agregarTarea(tarea)
+    }
+      input.value = ""
+   }
+})
